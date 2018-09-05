@@ -6,13 +6,15 @@ namespace DependencyInversionPrinciple
     {
         static void Main(string[] args)
         {
-            ILogger loger = new ConsoleLogger();
 
-            Console.WriteLine("Hello World!");
-
-            BoardGame magic = new BoardGame(loger);
+            var rip = new BadBoardGame("mtg");
             
-            magic.Play(1);
+            rip.Play();
+            rip.Save();
+            Console.Write(rip.GameName);
+            rip.Save();
+            
+            var wgf = BadBoardGame.Load("mtg");
         }
     }
 }
