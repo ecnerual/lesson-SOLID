@@ -5,7 +5,7 @@ using System.IO;
 
 namespace DependencyInversionPrinciple
 {
-    public class BadBoardGame
+    public class BadBoardGame : IExportable
     {
         public int PlayersCount { get; set; }
         public string GameName { get; set; }
@@ -64,6 +64,21 @@ namespace DependencyInversionPrinciple
         private static void LogError(string log)
         {
             Console.WriteLine(log);
+        }
+
+        public string ExportToString()
+        {
+            return $"Our game is {GameName}!! game played: {_gamePlayed}";
+        }
+
+        public string ExportToCsv()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string ExportToJSON()
+        {
+            throw new NotImplementedException();
         }
     }
 }

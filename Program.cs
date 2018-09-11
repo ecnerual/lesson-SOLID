@@ -6,15 +6,13 @@ namespace DependencyInversionPrinciple
     {
         static void Main(string[] args)
         {
+            VeryBadBoardGame mtg = new VeryBadBoardGame("mtg");
 
-            var rip = new BadBoardGame("mtg");
-            
-            rip.Play();
-            rip.Save();
-            Console.Write(rip.GameName);
-            rip.Save();
-            
-            var wgf = BadBoardGame.Load("mtg");
+            Console.WriteLine(mtg.ExportToString());
+
+            BadBoardGame badMtg = mtg;
+
+            Console.WriteLine(badMtg.ExportToString());
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace DependencyInversionPrinciple
+﻿using System;
+
+namespace DependencyInversionPrinciple
 {
     public interface ILogger
     {
