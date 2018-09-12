@@ -47,3 +47,22 @@ Pi pour prendre des notes je penses que tu vas prendre des feuilles a part pi un
 
 Par contre, veux-tu avoir VRAIMENT BESOIN D'un iphone 8 + ? ou juste quelque chose qui prend une photo?(implementation vs interface)
 
+
+
+##LISKOV SUBSTITUTION PRINCIPLE
+
+The principle defines that objects of a superclass shall be replaceable with objects of its subclasses without breaking the application
+
+En theorie, si ta des papa qui sont heureux dans une app! Ben si tu decide que papa va faire des enfants , ben les enfants ne doivent pas mettre la marde!
+
+
+##Interface segregation principle
+
+The interface-segregation principle (ISP) states that no client should be forced to depend on methods it does not use.[1] 
+ISP splits interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are 
+of interest to them
+
+##Dependency inversion principle
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
